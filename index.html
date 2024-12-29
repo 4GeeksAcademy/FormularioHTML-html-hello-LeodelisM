@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +11,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
   <div class="container mt-5">
     <!--Card como plantilla base, para bordes redondeados-->
@@ -22,22 +24,22 @@
         <div id="error-msg" class="alert alert-danger">Some fields are missing</div>
 
         <form class="row">
-     
-        <!--Input CARD-->
+
+          <!--Input CARD-->
 
           <div class="col-6 mb-3">
             <label for="exampleCard">Card #</label>
             <input class="form-control" id="numerocard" placeholder="XXXXXXXXXXXXXXXX" type="text">
           </div>
 
-        <!--Input CVC-->
+          <!--Input CVC-->
 
           <div class="col-2 mb-3">
             <label for="exampleCvc">CVC #</label>
             <input class="form-control" id="numerocvc" placeholder="0000" type="text">
           </div>
 
-        <!--Input AMOUNT-->
+          <!--Input AMOUNT-->
 
           <div class="col-4 mb-3">
             <label for="exampleAmount">Amount</label>
@@ -48,14 +50,14 @@
             </div>
           </div>
 
-        <!--Input FIRST NAME-->
+          <!--Input FIRST NAME-->
 
           <div class="col-6 mb-3">
             <label for="examplefirstname">First Name</label>
             <input class="form-control" id="firstname" type="text">
           </div>
 
-        <!--Input LAST NAME-->
+          <!--Input LAST NAME-->
 
           <div class="col-6 mb-3">
             <label for="examplelastname">Last Name</label>
@@ -69,55 +71,56 @@
             <input class="form-control" id="City" type="text">
           </div>
 
-        <!--Input state-->
+          <!--Input state-->
 
           <div class="col-3 mb-3">
-            <label for="exampleState">State</label> 
-            <select class="form-select form-select-sm" aria-label="Small select example" id="state" placeholder="Pick a state" type="text">
+            <label for="exampleState">State</label>
+            <select class="form-select form-select-sm" aria-label="Small select example" id="state"
+              placeholder="Pick a state" type="text">
               <option selected>Pick a state</option>
             </select>
           </div>
 
-        <!--Input Postal Code-->
+          <!--Input Postal Code-->
 
           <div class="col-3 mb-3">
             <label for="examplePostal">Postal Code</label>
             <input class="form-control" id="postalcode" type="text">
           </div>
 
-        <!--We accept-->
+          <!--We accept-->
 
           <div class="col-6 mb-3">
             <p for="exampleAccount">We accept:</p>
             <div class="btn-group" role="group" aria-label="Basic example">
 
-            <!-- Mastercard -->
+              <!-- Mastercard -->
 
-              <button type="button" class="btn btn-primary">
+              <label for="mastercard" class="btn btn-primary">
                 <input type="radio" id="mastercard" name="accept" required />
                 <i class="fa-brands fa-cc-mastercard"></i>
-              </button>
+              </label>
 
-            <!-- Visa -->
+              <!-- Visa -->
 
-              <button type="button" class="btn btn-primary">
+              <label for="visa" class="btn btn-primary">
                 <input type="radio" id="visa" name="accept" required />
                 <i class="fa-brands fa-cc-visa"></i>
-              </button>
-              
-            <!-- Diners-Club -->
+              </label>
 
-              <button type="button" class="btn btn-primary">
+              <!-- Diners-Club -->
+
+              <label for="diners-club" class="btn btn-primary">
                 <input type="radio" id="diners-club" name="accept" required />
                 <i class="fa-brands fa-cc-diners-club"></i>
-              </button>
-            
-            <!-- Amex -->
+              </label>
 
-              <button type="button" class="btn btn-primary">
+              <!-- Amex -->
+
+              <label for="amex" class="btn btn-primary">
                 <input type="radio" id="amex" name="accept" required />
                 <i class="fa-brands fa-cc-amex"></i>
-              </button>
+              </label>
             </div>
           </div>
 
@@ -128,17 +131,18 @@
             <textarea class="form-control" id="complexExampleMessage" style="height: 100px"></textarea>
             <small class="text-muted">Add any notes here.</small>
           </div>
-        </div>
+      </div>
 
-        <div class="card-footer">
-          <div class="gap-2 d-flex justify-content-md-end">
-            <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
-            <button class="btn btn-primary" type="button">Send</button>
-          </div>
+      <div class="card-footer">
+        <div class="gap-2 d-flex justify-content-md-end">
+          <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
+          <button class="btn btn-primary" type="button">Send</button>
+        </div>
         </form>
       </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
 </body>
+
 </html>
